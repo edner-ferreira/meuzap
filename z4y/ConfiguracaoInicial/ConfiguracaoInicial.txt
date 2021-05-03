@@ -1,0 +1,36 @@
+ssh -i "projeto-whats.pem" ubuntu@ec2-18-231-161-193.sa-east-1.compute.amazonaws.com
+
+chmod 400 projeto-whats.pem
+
+
+ Abra um cliente SSH.
+Localize o arquivo de chave privada. A chave usada para executar esta instância é projeto-whats.pem
+Execute este comando, se necessário, para garantir que sua chave não fique visível publicamente.
+ chmod 400 projeto-whats.pem
+Conecte-se à sua instância usando sua DNS pública:
+
+     ec2-18-231-161-193.sa-east-1.compute.amazonaws.com
+
+Exemplo:
+
+ ssh -i "projeto-whats.pem" ubuntu@ec2-18-231-161-193.sa-east-1.compute.amazonaws.com
+
+https://sa-east-1.console.aws.amazon.com/ec2/v2/home?region=sa-east-1#ConnectToInstance:instanceId=i-09277e4f9b209cbf6
+
+##########################################################################
+
+Criar a instacia no amazon cs2
+	- pegar o link de coneccao SSH terminal ssh -i "projeto-whats.pem" ubuntu@ec2-18-231-161-193.sa-east-1.compute.amazonaws.com
+	- mexer na regra de seguranca, add a porta ex: 3000 ou 5000 http.
+	- atualizar os pacotes
+		- sudo apt-get update
+	-instalar o node e o npm
+	- instalar o pacotes adicionais
+		- sudo apt install -y curl nano gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget build-essential apt-transport-https libgbm-dev
+		-add o projeto no servidor
+
+
+
+chave SSH
+
+sudo ssh -i "projeto-whats.pem" ubuntu@ec2-54-94-134-128.sa-east-1.compute.amazonaws.com

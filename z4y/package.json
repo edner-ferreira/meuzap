@@ -1,0 +1,38 @@
+{
+  "name": "meuzap",
+  "version": "1.0.1",
+  "description": "meuzap",
+  "main": "y",
+  "scripts": {
+    "test": "n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "keywords": [
+    "n"
+  ],
+  "author": "edner",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "body-parser-xml": "^2.0.1",
+    "cors": "^2.8.5",
+    "exec": "^0.2.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "promise": "^8.1.0",
+    "throw": "^1.1.0",
+    "util": "^0.12.3",
+    "venom-bot": "^3.0.14",
+    "xls-to-json": "^2.1.0",
+    "xml2json": "^0.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
